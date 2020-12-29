@@ -1,15 +1,11 @@
 import Link from 'next/link'
+import tw from 'twin.macro'
 import Layout from '../components/Layout/Layout'
-// import 'twin.macro'
-
-import tw, { css, styled, theme } from 'twin.macro'
 
 const IndexPage = () => {
-  const x = css({ color: theme('colors.black') })
-
   return (
     <Layout title="Home | Next.js + TypeScript Example">
-      <h1>Hello Next.js 👋</h1>
+      <h1>Hello Next.js</h1>
       <p css={[tw`bg-red-300`]}>
         <Link href="/about">
           <a>About</a>

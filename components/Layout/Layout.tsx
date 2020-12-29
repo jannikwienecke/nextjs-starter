@@ -1,10 +1,9 @@
-import React, { ReactNode } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
-import { Navbar } from './Navbar'
+import React, { ReactNode } from 'react'
 import { ContainerApp } from './ContainerApp'
-import { ContainerSide } from './ContainerSide'
 import { ContainerContent } from './ContainerContent'
+import { ContainerSide } from './ContainerSide'
+import { Navbar } from './Navbar'
 import { SideNav } from './SideNav'
 
 type Props = {

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 // import 'twin.macro'
 
 import tw, { css, styled, theme } from 'twin.macro'

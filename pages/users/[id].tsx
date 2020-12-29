@@ -2,7 +2,7 @@ import { GetStaticProps, GetStaticPaths } from 'next'
 
 import { User } from '../../interfaces'
 import { sampleUserData } from '../../utils/sample-data'
-import Layout from '../../components/Layout'
+import Layout from '../../components/Layout/Layout'
 import ListDetail from '../../components/ListDetail'
 
 type Props = {
@@ -37,7 +37,7 @@ export default StaticPropsDetail
 export const getStaticPaths: GetStaticPaths = async () => {
   // Get the paths we want to pre-render based on users
   const paths = sampleUserData.map((user) => ({
-    params: { id: user.id.toString() },
+    params: { id: user.id.toString() }
   }))
 
   // We'll pre-render only these paths at build time.

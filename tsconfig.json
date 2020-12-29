@@ -20,5 +20,12 @@
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "pages/me/index.test.js"],
-  "files": ["twin.d.ts"]
+  "files": [
+    "twin.d.ts",
+    "./components/Layout/Logout.tsx",
+    "./components/Layout/Logo.tsx",
+    "./components/Layout/MotionLink.tsx",
+    "./components/Layout/WrapperRightNavBar.tsx",
+    "./components/Layout/WrapperLeftNavBar.tsx"
+  ]
 }

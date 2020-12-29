@@ -25,7 +25,7 @@ module.exports = {
       green: colors.emerald,
       blue: colors.blue,
       indigo: colors.indigo,
-      purple: colors.violet,
+      purple: '#151628',
       pink: colors.pink
     },
     spacing: {
@@ -72,7 +72,9 @@ module.exports = {
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite'
     },
-    backgroundColor: (theme) => theme('colors'),
+    backgroundColor: (theme) => ({
+      ...theme('colors')
+    }),
     backgroundImage: {
       none: 'none',
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
@@ -376,6 +378,7 @@ module.exports = {
       '3/6': '50%',
       '4/6': '66.666667%',
       '5/6': '83.333333%',
+      97: '95vh',
       full: '100%',
       screen: '100vh'
     }),
@@ -912,5 +915,5 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus']
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')]
 }

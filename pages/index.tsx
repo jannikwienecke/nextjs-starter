@@ -11,11 +11,12 @@ const IndexPage = () => {
           <a>About</a>
         </Link>
       </p>
-      <Input />
     </Layout>
   )
 }
 
-const Input = tw.input`border-yellow-100 border hover:border-blue-500`
+IndexPage.getLayout = (page: React.FC) => (
+  <Layout title="IndexPage">{page}</Layout>
+)
 
 export default IndexPage
